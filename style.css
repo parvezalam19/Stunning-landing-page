@@ -224,4 +224,7 @@ nav li {
 .dot{
     display: none;
 }
+    nav{
+    padding:15px 10px;
+}
 }
