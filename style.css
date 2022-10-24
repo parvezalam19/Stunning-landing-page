@@ -188,3 +188,40 @@ h3{
 .yellow{
 background-color: #ffe4A0;
 }
+
+
+
+@media screen and (max-width : 600px) {
+section{
+flex-wrap: wrap;
+}
+.left-container{
+    margin-left: 30px;
+}
+.left-container h1{
+    font-size: 40px;
+}
+
+.right-container img{
+width: 400px;
+margin-left: 20px;
+
+}
+
+nav li {
+    margin: 0 8px;
+    font-size: 13px;
+}
+.logo img{
+    width: 60px;
+    height: 30px;
+}
+.btn{
+    font-size: 10px;padding: 5px;
+    margin-left: 10px;
+
+}
+.dot{
+    display: none;
+}
+}
