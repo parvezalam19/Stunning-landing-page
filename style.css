@@ -14,10 +14,14 @@ body{
 }
 a{
     text-decoration: none;
-    color:gray;
+    color:#fe5d20;
+    font-weight: 600;
 }
 li{
     list-style: none;
+}
+button{
+    cursor: pointer;
 }
 nav{
     justify-content: space-between;
@@ -28,6 +32,7 @@ nav{
 }
 nav ul{
     display: flex;
+    position: relative;
 }
 
 nav li {
@@ -48,12 +53,20 @@ li > a::after{
 
 li > a:hover::after{
 width: 100%;
-background:blue;
+background:#8071d0;
 }
+li > a:hover{
+    color: black;
+}
+
+
+.active-nav {
+    border-bottom: 3px solid #8071d0;
    
-li > a.active-nav::after {
-    width: 100%;
-background:#8071D0;
+}
+.active-nav:hover a::after{
+display: none;
+
 }
 
 .btn{
@@ -63,7 +76,6 @@ background:#8071D0;
     font-weight: 600;
     border:none;
     border-radius: 20px;
-    cursor: pointer;
 }
 /* section part***************** */
 
@@ -97,6 +109,11 @@ section{
     display: flex;
     align-items: center;
 }
+.heading-btn img:hover{
+    box-shadow: 1px 1px 6px -2px;
+    border-radius: 12px;
+
+}
 
 .btn-1{
     background-color: #5243c0;
@@ -125,16 +142,13 @@ section{
 
 /* card section********************* */
 .accounts-colm{
-    /* background-color: red; */
     margin-top: 40px;
 }
 .card{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 10px;
     margin:  10px 0;
-    /* border: 1px solid gray; */
     width: 85%;
     cursor: pointer;
 
@@ -190,14 +204,13 @@ background-color: #ffe4A0;
 }
 
 
-
+/* Media Query**************************************************** */
 @media screen and (max-width : 600px) {
 section{
 flex-wrap: wrap;
-    margin-top: 30px;
 }
 .left-container{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .left-container h1{
     font-size: 40px;
@@ -205,7 +218,7 @@ flex-wrap: wrap;
 
 .right-container img{
 width: 400px;
-margin-left: 20px;
+margin-left: 10px;
 
 }
 
@@ -225,7 +238,8 @@ nav li {
 .dot{
     display: none;
 }
-    nav{
+nav{
     padding:15px 10px;
 }
+
 }
